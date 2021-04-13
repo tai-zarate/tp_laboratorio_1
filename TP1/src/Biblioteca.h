@@ -13,7 +13,14 @@
 #define BIBLIOTECA_H_
 
 void MenuPrincipal();
-int TomarEnteros (char[]);
+float TomarEnteros (char[]);
 char VerificarConfimarcion(char);
+int VerificarOpcion(int);
+
+float SumarNumeros (float, float);
+float RestarNumeros (float, float);
+float DivisionNumeros (float, float);
+
+void MostrarResultados (float, float, int, int, int);
 
 #endif /* BIBLIOTECA_H_ */

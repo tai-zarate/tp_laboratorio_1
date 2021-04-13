@@ -15,7 +15,9 @@
 
 int main() {
 	setbuf(stdout, NULL);
+
 	MenuPrincipal();
+
 	return EXIT_SUCCESS;
 }
 
