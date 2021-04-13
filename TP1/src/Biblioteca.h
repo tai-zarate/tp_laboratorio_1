@@ -20,7 +20,8 @@ int VerificarOpcion(int);
 float SumarNumeros (float, float);
 float RestarNumeros (float, float);
 float DivisionNumeros (float, float);
+float MultiplicarNumeros (float, float);
 
-void MostrarResultados (float, float, float, int, int, int);
+void MostrarResultados (float, float, float, float, int, int, int);
 
 #endif /* BIBLIOTECA_H_ */

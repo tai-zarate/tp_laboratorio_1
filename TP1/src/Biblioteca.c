@@ -15,6 +15,7 @@ void MenuPrincipal()
 	float suma;
 	float resta;
 	float division;
+	float multiplicacion;
 	int banderaNumeroA;
 	int banderaNumeroB;
 	int banderaFunciones;
@@ -60,11 +61,12 @@ void MenuPrincipal()
 			case 3:
 				suma = SumarNumeros (numeroA, numeroB);
 				resta = RestarNumeros (numeroA, numeroB);
-				division =DivisionNumeros (numeroA, numeroB);
+				division = DivisionNumeros (numeroA, numeroB);
+				multiplicacion = MultiplicarNumeros(numeroA, numeroB);
 				banderaFunciones = 1;
 			break;
 			case 4:
-				MostrarResultados (suma, resta, division, banderaFunciones, banderaNumeroA, banderaNumeroB);
+				MostrarResultados (suma, resta, division, multiplicacion, banderaFunciones, banderaNumeroA, banderaNumeroB);
 			break;
 		}
 	}while(opcion!=5);
@@ -141,7 +143,16 @@ float DivisionNumeros (float numeroA, float numeroB)
 	return resultado;
 }
 
-void MostrarResultados (float suma, float resta, float division, int banderaFuncion, int banderaA, int banderaB)
+float MultiplicarNumeros (float numeroA, float numeroB)
+{
+	float resultado;
+
+	resultado = numeroA * numeroB;
+
+	return resultado;
+}
+
+void MostrarResultados (float suma, float resta, float division, float multiplicacion, int banderaFuncion, int banderaA, int banderaB)
 {
 	switch(banderaFuncion)
 	{
@@ -160,6 +171,7 @@ void MostrarResultados (float suma, float resta, float division, int banderaFunc
 					{
 						printf("El total de la división es de: %.2f\n", division);
 					}
+					printf("El total de la multiplicación es de: %.2f\n", multiplicacion);
 				} else
 				{
 					printf("Uno de los operando no ha sido ingresado\n");
