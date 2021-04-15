@@ -1,10 +1,10 @@
 /*
  ============================================================================
  Name        : TP1.c
- Author      : 
+ Author      : Zarate Enzo Taiel
  Version     :
  Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Description : TP1
  ============================================================================
  */
 
@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Biblioteca.h"
+#include "Funciones.h"
 
 int main() {
 	setbuf(stdout, NULL);
