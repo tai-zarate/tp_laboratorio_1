@@ -46,12 +46,13 @@ int MultiplicarNumeros (int numeroA, int numeroB)
 
 int FactorialNumero (int numero)
 {
+	int i;
 	int resultado;
 	resultado = 1;
 
-	for(; numero > 0; numero--)
+	for(i=numero; i > 0; i--)
 	{
-		resultado *= numero;
+		resultado *= i;
 	}
 
 	return resultado;
