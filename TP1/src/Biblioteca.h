@@ -4,10 +4,6 @@
  *  Created on: 13 abr. 2021
  *      Author: Zarate Enzo Taiel
  */
-
-#include <stdio.h>
-#include <stdlib.h>
-
 #ifndef BIBLIOTECA_H_
 #define BIBLIOTECA_H_
 /**

@@ -5,8 +5,10 @@
  *      Author: Zarate Enzo Taiel
  */
 
-#include "Funciones.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include "Biblioteca.h"
+#include "Funciones.h"
 
 int SumarNumeros (int numeroA, int numeroB)
 {

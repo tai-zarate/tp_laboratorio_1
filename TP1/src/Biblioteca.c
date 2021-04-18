@@ -5,8 +5,10 @@
  *      Author: Zarate Enzo Taiel
  */
 
-#include "Biblioteca.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include "Funciones.h"
+#include "Biblioteca.h"
 
 void MenuPrincipal()
 {

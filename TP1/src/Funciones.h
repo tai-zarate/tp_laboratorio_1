@@ -4,10 +4,6 @@
  *  Created on: 15 abr. 2021
  *      Author: usuario
  */
-
-#include <stdio.h>
-#include <stdlib.h>
-
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
