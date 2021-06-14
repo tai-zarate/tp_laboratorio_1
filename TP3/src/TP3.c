@@ -16,7 +16,7 @@
 int main()
 {
 	setbuf(stdout, NULL);
-    int option = 0;
+    int option;
 
     LinkedList* listaEmpleados = ll_newLinkedList();
 
@@ -31,7 +31,7 @@ int main()
     	printf("8. Guardar los datos de los empleados en el archivo data.csv (modo texto).\n");
     	printf("9. Guardar los datos de los empleados en el archivo data.bin (modo binario).\n");
     	printf("10. Salir\n");
-    	if((GetInt("Seleccione una opción: ", &option))==0)
+    	GetInt("Seleccione una opción: ", &option);
     	{
     		switch(option)
 			{
