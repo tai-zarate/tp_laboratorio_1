@@ -276,7 +276,7 @@ int CompararPorId(Employee* empleadoI,Employee* empleadoJ)
 				comparacion = 0;
 			} else
 			{
-				comparacion = 0;
+				comparacion = -1;
 			}
 		}
 	}
@@ -305,7 +305,7 @@ int CompararPorSueldo(Employee* empleadoI,Employee* empleadoJ)
 				comparacion = 0;
 			} else
 			{
-				comparacion = 0;
+				comparacion = -1;
 			}
 		}
 	}
@@ -334,7 +334,7 @@ int CompararPorHorasTrabajadas(Employee* empleadoI,Employee* empleadoJ)
 				comparacion = 0;
 			} else
 			{
-				comparacion = 0;
+				comparacion = -1;
 			}
 		}
 	}
