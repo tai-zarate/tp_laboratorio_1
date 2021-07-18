@@ -13,7 +13,6 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 	FILE* archivo;
 
 	archivo = fopen(path,"r");
-	ll_clear(pArrayListEmployee);
 	if(archivo != NULL)
 	{
 		parser_EmployeeFromText(archivo, pArrayListEmployee);
@@ -33,7 +32,6 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
 {
 	FILE* archivo;
-
 	archivo = fopen(path,"rb");
 	if(archivo != NULL)
 	{
@@ -68,10 +66,11 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
 		if(pIdSave!=NULL)
 		{
 			fscanf(pIdSave,"%s", idStr);
+			fprintf(pIdSave,"%d", atoi(idStr)+1);
 			fclose(pIdSave);
 		}
 		sprintf(idStr, "%d", atoi(idStr)+1);
-		GetString("Ingrese el nombre: ", nombreStr);
+		GetStringSoloLetras("Ingrese el nombre: ", nombreStr);
 		GetString_SinNegativo("Ingrese la nueva cantidad de horas trabajadas: ", "Error. Asegurese de ingreser un número mayor a 0: ", horasTrabajadasStr);
 		GetString_SinNegativo("Ingrese el nuevo sueldo: ", "Error. Asegurese de ingreser un número mayor a 0: ", sueldoStr);
 
@@ -368,4 +367,3 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
 
     return 1;
 }
-

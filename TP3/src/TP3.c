@@ -17,6 +17,8 @@ int main()
 {
 	setbuf(stdout, NULL);
     int option;
+    int bandera;
+    bandera = 0;
 
     LinkedList* listaEmpleados = ll_newLinkedList();
 
@@ -36,10 +38,24 @@ int main()
     		switch(option)
 			{
 				case 1:
-					controller_loadFromText("data.csv",listaEmpleados);
+					if(bandera!=1)
+					{
+						controller_loadFromText("data.csv",listaEmpleados);
+						bandera=1;
+					} else
+					{
+						printf("Los datos ya han sido cargados\n");
+					}
 				break;
 				case 2:
-					controller_loadFromBinary("data.bin", listaEmpleados);
+					if(bandera!=1)
+					{
+						controller_loadFromBinary("data.bin", listaEmpleados);
+						bandera = 1;
+					} else
+					{
+						printf("Los datos ya han sido cargados\n");
+					}
 				break;
 				case 3:
 					controller_addEmployee(listaEmpleados);
@@ -65,5 +81,6 @@ int main()
 			}
     	}
     }while(option != 10);
+
     return 0;
 }

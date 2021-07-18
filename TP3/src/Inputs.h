@@ -11,13 +11,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 
 int GetInt (char*, int*);
 int GetFloat (char*, float*);
 int GetChar (char*, char*);
 int GetString(char*, char*);
 int GetString_SinNegativo(char* msj, char* msjError, char* valor);
+int SoloNumeros(char* texto);
+int GetStringSoloLetras(char* msj, char *valor);
+int SoloLetras(char* texto);
 
 
 #endif /* SRC_INPUTS_H_ */
